@@ -9,7 +9,6 @@ def load_namespaces_with_errors():
     rset.Execute()
     
     while rset._Next():
-        print(rset.Get("Namespace"))
         namespaces_with_errors.append(rset.Get("Namespace"))
 
     return namespaces_with_errors

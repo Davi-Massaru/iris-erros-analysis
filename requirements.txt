@@ -1,4 +1,3 @@
-pandas
 requests
 flask>=2.0.0
 flask-sqlalchemy
@@ -6,3 +5,5 @@ intersystems_iris @ https://github.com/intersystems-community/intersystems-irisp
 sqlalchemy_iris
 iris-pex-embedded-python>=2.0.0
 pytest
+pandas
+plotly

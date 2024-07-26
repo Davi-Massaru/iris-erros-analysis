@@ -11,5 +11,3 @@ services:
       - 53773
     volumes:
       - ./:/irisrun/repo
-    env_file:
-        - .env

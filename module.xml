@@ -16,8 +16,8 @@
         Description="Sample WSGI application using Flask"
         MatchRoles=":${dbrole}"
         WSGIAppLocation="${libdir}/flaskapp/"
-        WSGIAppName="app"
-        WSGICallable="app"
+        WSGIAppName="App"
+        WSGICallable="App"
        />
       
     </Module>
