@@ -15,4 +15,4 @@ zw sc
 
 zpm "load /opt/irisbuild/ -v":1:1
 
-halt
+halt 
