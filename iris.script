@@ -4,11 +4,12 @@ do ##class(%SYSTEM.OBJ).LoadDir("/opt/irisbuild/src","ck",,1)
 do ##class(Security.Users).UnExpireUserPasswords("*")
 
 Kill props
+
 Set props("Description") = "Sample WSGI Application"
 Set props("MatchRoles") = ":%All"
 Set props("WSGIAppLocation") = "/opt/irisbuild/src/python/flaskapp"
-Set props("WSGIAppName") = "App"
 Set props("WSGICallable") = "App"
+Set props("WSGIAppName") = "App"
 Set props("DispatchClass") = "%SYS.Python.WSGI" // important, otherwise will be recognized as CSP application
 Set sc = ##class(Security.Applications).Create("/flask", .props)
 zw sc
