@@ -6,6 +6,8 @@ This project involves developing a system to analyze and monitor errors on the I
 ## Índice
 
 - [Installation](#Installation)
+    - [Considerations of Instalation](#Considerations-of-Instalation)
+    - [Testing the Application and Error Graphs](#Testing-the-Application-and-Error-Graphs)
 - [Objective](#Objective)
 - [Technologies](#Technologies)
 - [Project Structure](#Project-Structure)
@@ -37,7 +39,9 @@ docker-compose up -d
 ```
 ---
 
-- **Considerations of Instalation:** If you need reinstall the project or rerun, execute:
+- **Considerations of Instalation:** 
+
+If you need reinstall the project or rerun, execute:
 
     - Stop docker-compose file
     ```bash
@@ -50,6 +54,31 @@ docker-compose up -d
     rm -rf ./.venv
     ```
     - Re-execute the installation steps with the exception of git clone
+
+- **Testing the Application and Error Graphs:**
+
+
+To test the application and visualize the error graphs, it is necessary to generate sample errors to populate the data for display. This step is not required in a real production environment. To simulate errors, execute the following commands in the IRIS terminal:
+
+- `Simulate an ObjectScript error:`
+
+```objectscript
+Do ##class(dc.WebApplication).DivideBy0Objectscript()
+```
+
+- `Simulate a generic ObjectScript exception`
+```objectscript
+Do ##class(dc.WebApplication).badDOB()
+```
+
+- `Simulate a Python exception:`
+
+```objectscript
+Do ##class(dc.WebApplication).DivideBy0Python()
+```
+
+These commands will generate errors that can be used to test and verify the functionality of the error analysis and graphing features in the application.
+
 
 ## Objective
 
