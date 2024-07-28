@@ -55,7 +55,7 @@ docker-compose up -d
 
 Monitor and analyze errors on the IRIS portal generate statistical graphs from error data facilitate visualization and interpretation of error data.
 
-## Technologies Used
+## Technologies
 
 - **Flask:**: Web framework for Python used in developing the user interface.
 
