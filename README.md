@@ -39,24 +39,23 @@ docker-compose up -d
 ```
 ---
 
-- **Considerations of Instalation:** 
+### Considerations of Instalation:
 
 If you need reinstall the project or rerun, execute:
 
-    - Stop docker-compose file
-    ```bash
-    docker-compose down
-    ```
+- `Stop docker-compose file:`
+```bash
+docker-compose down
+```
 
-    - Desactive the virtual environment
-    ```bash
-    deactivate
-    rm -rf ./.venv
-    ```
-    - Re-execute the installation steps with the exception of git clone
+- `Desactive the virtual environment:`
+```bash
+deactivate
+rm -rf ./.venv
+```
+- Re-execute the installation steps: [Installation](#Installation) with the exception of git clone 
 
-- **Testing the Application and Error Graphs:**
-
+### Testing the Application and Error Graphs:
 
 To test the application and visualize the error graphs, it is necessary to generate sample errors to populate the data for display. This step is not required in a real production environment. To simulate errors, execute the following commands in the IRIS terminal:
 
