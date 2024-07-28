@@ -88,7 +88,8 @@ Monitor and analyze errors on the IRIS portal generate statistical graphs from e
 - **Flask:**: Web framework for Python used in developing the user interface.
 
 - **Pandas:**: Python library for data analysis and manipulation.
-Plotly: Interactive graphing library for data visualization.
+
+- **Plotly**: Interactive graphing library for data visualization.
 
 - **InterSystems IRIS:**: Data platform used for storing and processing error data.
 
